@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  a_string: MyString
+  an_int: 
+  a_decimal: 9.99
+
+two:
+  a_string: MyString
+  an_int: 
+  a_decimal: 9.99
