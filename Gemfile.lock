@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    multipluck (0.0.2)
+    multipluck (0.0.3)
       rails (~> 3.2.3)
 
 GEM
