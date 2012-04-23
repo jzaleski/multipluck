@@ -1,4 +1,6 @@
-Multipluck is a Ruby gem for rails that enhances the .pluck function to select multiple columns 
+Multipluck is a Ruby gem for Rails that enhances the .pluck function to select multiple columns.  
+
+Currently limited to Rails 3.2.3+, but I plan to change that.
 
 ### Usage
 
