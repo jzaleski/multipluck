@@ -1,3 +1,5 @@
+## Multipluck  [![Build Status](https://secure.travis-ci.org/hanzq/multipluck.png)](http://travis-ci.org/hanzq/multipluck)
+
 Multipluck is a Ruby gem for Rails that enhances the .pluck function to select multiple columns.  
 
 Currently limited to Rails 3.2.3+, but I plan to change that.
@@ -13,13 +15,13 @@ User.pluck([:id, :name])
 
 ### Installation
 
-1. Add the gem to your Gemfile
+ 1. Add the gem to your Gemfile
 
-```ruby
-gem 'multipluck'
-```
+ ```ruby
+ gem 'multipluck'
+ ```
 
-2. Pluck forth!
+ 2. Pluck forth!
 
 
 This project rocks and uses MIT-LICENSE. Yes it does.
