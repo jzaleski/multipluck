@@ -1,10 +1,11 @@
-## Multipluck  [![Build Status](https://secure.travis-ci.org/hanzq/multipluck.png)](http://travis-ci.org/hanzq/multipluck)
+## Multipluck 
 
-Multipluck is a Ruby gem for Rails that enhances the .pluck function to select multiple columns.  
+[![Build Status](https://travis-ci.org/jzaleski/multipluck.svg)](https://travis-ci.org/jzaleski/multipluck)
+[![Dependency Status](https://gemnasium.com/jzaleski/multipluck.png)](https://gemnasium.com/jzaleski/multipluck)
 
-Currently limited to Rails 3.2.3+, but I plan to change that.
+Multipluck is a Ruby gem for Rails that enhances the `pluck` function to select multiple columns.
 
-### Usage
+## Usage
 
 ```ruby
 # Fetch all user ids and names
@@ -13,15 +14,10 @@ User.pluck([:id, :name])
 # => [ [1, "Bob"], [2, "Simone"], ...  ]
 ```
 
-### Installation
+## Contributing
 
- 1. Add the gem to your Gemfile
-
- ```ruby
- gem 'multipluck'
- ```
-
- 2. Pluck forth!
-
-
-This project rocks and uses MIT-LICENSE. Yes it does.
+1. Fork it ( http://github.com/jzaleski/foundry/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
