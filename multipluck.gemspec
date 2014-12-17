@@ -1,21 +1,21 @@
-$:.push File.expand_path("../lib", __FILE__)
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'multipluck/version'
 
-# Maintain your gem's version:
-require "multipluck/version"
+Gem::Specification.new do |gem|
+  gem.name = 'multipluck'
+  gem.version = Multipluck::VERSION
+  gem.authors = ['Jonathan W. Zaleski', 'David Wright']
+  gem.email = ['JonathanZaleski@gmail.com']
+  gem.homepage = 'https://github.com/jzaleski/multipluck'
+  gem.summary = 'A Ruby gem for Rails that enhances the `pluck` function to select multiple columns'
 
-# Describe your gem and declare its dependencies:
-Gem::Specification.new do |s|
-  s.name        = "multipluck"
-  s.version     = Multipluck::VERSION
-  s.authors     = ["David Wright"]
-  s.email       = ["davidwright@gmail.com"]
-  s.homepage    = "https://github.com/hanzq/multipluck"
-  s.summary     = "Use the ActiveRecord pluck to pluck multiple columns instead of just one"
+  gem.files = `git ls-files`.split($/)
+  gem.executables = gem.files.grep(%r{^bin/}) { |file| File.basename(file) }
+  gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  s.test_files = Dir["test/**/*"]
+  gem.add_dependency 'rails', '>= 3.2.0', '< 4.0'
 
-  s.add_dependency "rails", ">= 3.2.0", "< 4.0"
-
-  s.add_development_dependency "sqlite3"
+  gem.add_development_dependency 'sqlite3'
 end
