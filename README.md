@@ -3,12 +3,16 @@
 [![Build Status](https://travis-ci.org/jzaleski/multipluck.svg)](https://travis-ci.org/jzaleski/multipluck)
 [![Dependency Status](https://gemnasium.com/jzaleski/multipluck.png)](https://gemnasium.com/jzaleski/multipluck)
 
-Multipluck is a Ruby gem for Rails that enhances the `pluck` function to select multiple columns.
+A Ruby gem for Rails that enhances the `pluck` function to select multiple columns
 
 ## Usage
 
 ```ruby
-# Fetch all user ids and names
+# Fetch all user ids and names using var-args
+User.pluck(:id, :name)
+# => [[1, "Bob"], [2, "Simone"], ...]
+
+# Fetch all user ids and names using an `Array` (legacy)
 User.pluck([:id, :name])
 # => [[1, "Bob"], [2, "Simone"], ...]
 ```
